@@ -1,0 +1,70 @@
+/* ./src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@layer base {
+  a:hover {
+    cursor: pointer;
+  }
+
+  .css-b8ldur-Input [type='text']:focus {
+    --tw-ring-inset: 1px;
+    --tw-ring-offset-width: 1px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+  }
+
+  .animate-select-open {
+    animation: fadeIn 0.15s ease-in-out;
+  }
+
+  .avatar {
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='.492' y1='30.856' x2='47.43' y2='21.16' gradientTransform='matrix(1 0 0 -1 0 50)'%3E%3Cstop offset='.036' stop-color='%2348cce0'/%3E%3Cstop offset='.328' stop-color='%23505add'/%3E%3Cstop offset='.641' stop-color='%23be40c0'/%3E%3Cstop offset='.958' stop-color='%23fba82b'/%3E%3C/linearGradient%3E%3Cpath d='M24 47c12.7 0 23-10.3 23-23S36.7 1 24 1 1 11.3 1 24s10.3 23 23 23z' fill='none' stroke='url(%23a)' stroke-width='2'/%3E%3C/svg%3E")
+  }
+
+
+
+}
